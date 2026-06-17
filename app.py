@@ -333,6 +333,7 @@ if __name__ == "__main__":
         db.create_all()
     
     app.run(host="0.0.0.0", port=5000)
+    app.run(host="0.0.0.0",port=port)
 @app.route("/history")
 @login_required
 def history():
@@ -373,24 +374,7 @@ plt.pie(
     autopct="%1.1f%%"
 )
 
-print("Generating chart...")
-chart_path = os.path.join(
-    app.static_folder,
-    "chart"
-)
-
-os.makedirs(chart_path, exist_ok=True)
-
-chart_path = os.path.join(
-    chart_path,
-      "chart.png")
-
-plt.savefig(chart_path)
-print("saving to:", chart_path)
-plt.close()
-print("Chart saved successfully!")
 from sqlalchemy import extract
-
 @app.route("/charts")
 @login_required
 def charts():
