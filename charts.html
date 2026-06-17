@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Charts - SocialPulse AI</title>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<body>
+
+    <h1>📊 Sentiment Analytics</h1>
+
+    <img src="{{ url_for('static',
+                         filename='chart/chart.png') }}"
+         width="500">
+
+    <br><br>
+
+    <a href="{{ url_for('dashboard') }}">
+        Back to Dashboard
+    </a>
+
+<h2>Monthly Analyzed Posts</h2>
+
+<canvas id="myChart"></canvas>
+
+<script>
+const ctx = document.getElementById('myChart');
+
+new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['Jan','Feb','Mar','Apr','May','Jun'],
+        datasets: [{
+            label: 'Analyzed Posts',
+            data: [12,20,35,48,60,85]
+        }]
+    }
+});
+</script>
+</body>
+</html>

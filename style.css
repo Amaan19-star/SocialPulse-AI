@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(
+        135deg,
+        #f5f7fa,
+        #e4eaf7
+    );
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+}
+
+.logo-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo-section h1 {
+    font-size: 50px;
+    color: #0d1b5e;
+}
+
+.logo-section p {
+    font-size: 20px;
+    color: #555;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+textarea {
+    width: 100%;
+    height: 120px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: linear-gradient(
+        90deg,
+        #007bff,
+        #7b2cff
+    );
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.result {
+    margin-top: 20px;
+    background: #f0f7ff;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.history {
+    margin-top: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+th {
+    background: #0d1b5e;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.logout {
+    text-decoration: none;
+    background: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode .card,
+.dark-mode table {
+    background-color: #1e1e1e;
+    color: white;
+}
